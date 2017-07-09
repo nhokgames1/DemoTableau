@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Tableau JavaScript In Action Video</title>
+	<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<link href="bootstrap.css" rel="stylesheet" media="screen">
+     <script type="text/javascript"
+        src="http://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript" src="jsapi_embed_interactions_beginning.js"></script>
+
+
+    <!-- Access the API & Load your JavaScript -->
+
+</head>
+<body>
+
+		<div class="row">
+				<div class="span3"><img src="logo.png" ></div>
+			<h2 class="span7 pagination-centered">JavaScript In Action</h2>
+		</div>
+		<div class="row">
+		  <div class="col-sm-4">
+			<ul id = "menu" class="nav nav-list span2">
+				<li class="nav-header">Switching Views</li>
+				<li class="nav-header">Filtering & Selecting Marks</li>
+				<li><a onClick="show()">Filter</a></li>
+				<li><a onClick="filterDate()">FilterDate</a></li>
+				<li><a onClick="switchTo('ContentAnalysis')">Switch to ContentAnalysis</a></li>
+				<li><a onClick="switchTo('OverallTrends')">Switch to OverallTrends</a></li>
+				<li><a onClick="exportPDF()">To PDF</a></li>
+				<li><a onClick="exportImage()">To Image</a></li>
+
+			</ul>
+			</div>
+			 <div id="Viz" class="col-sm-6"></div>
+	</div>
+
+</body>
+</html>
